@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 14px Roboto, sans-serif;
+    background-image: linear-gradient( 90deg, #000000 15%, #7b366f 100%);
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    width: 100%;
+}
+header img{
+    width: 15%;
+}
+
+.direitos{
+    color: #fff;
+    opacity: 0.5;
+    font-size: 15px;
+    
+}
+
+.app-lista {
+    background-image:url(https://img.freepik.com/vector-gratis/iconos-redes-sociales_53876-89125.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.btn-app{
+    width: 200px;
+    height: 60px;
+    background: #7b366f;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    transition: filter 0.2s;
+
+}
+.btn-app:hover{
+    filter: brightness(90%)
+}
+.pesquisar{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 30px;
+    width: 50%;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.voltapsq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.bordapsq{
+    width: 45px;
+    height: 45px;
+    border-radius: 0 50% 50% 0;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circpesq{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#h1{
+    font-size: 25px;
+    text-align: center;
+}
+.pesquisar input{
+    height: 45px;
+    
+    border: none;
+    border-radius: 50px 0 0 50px;
+    text-align: flex-start;
+    padding: 20px;
+    background-color: #000000;
+    text-decoration-color: rgb(255, 255, 255);
+    
+
+}
+input::placeholder {
+    color: rgb(29, 29, 29);
+}
+input{
+    color: #ffffff;
+}
+.pesquisar img{
+    width: 20px;
+    height: 20px;
+}
+.pesquisar .lupa{
+    background-color: transparent;
+    border: none;
+}
+
+.app {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 32px auto;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#btnCadastrar{
+    background-color: #7B366F;
+}
+
+
+
+.app-lista form{
+    width: 100%;
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.app .input-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.app .content-actions{
+    width: 100%;
+    margin: 15px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-actions-buttons{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+}
+
+.app .content-list{
+    width: 100%;
+    margin: 15px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app .content-list .content-list-container{
+    width: 100%;
+    max-width: 700px;
+    margin: 32px auto;
+}
+
+.app .content-list ul{
+    display: grid;
+    grid-gap: 24px;
+    list-style: none;
+}
+
+.app .content-list ul li{
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+.app .content-list ul li strong{
+    display: block;
+    margin-bottom: 16px;
+    color: #41414d
+}
+
+.app .content-list ul li strong{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #41414d
+}
+
+.app .content-list ul li p{
+    color: #737380;
+    line-height: 21px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.app .content-list ul li a{
+    height: 30px;
+    padding: 5px;
+    background: #0b7698;
+    border: 0;
+    border-radius: 2px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 5px;
+    transition: filter 0.2s;
+}
+
+.app .content-list ul li a:hover{
+    filter: brightness(90%)
+}
+
+
+/*MODAL*/
+.modal-title{
+    color: #7B366F;
+}
+.col-form-label{
+    color:  #7B366F;
+}
+.modal-content{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+
+}
+.modal-header{
+    width: 100%;
+    height: 20px;
+    background-color: #7B366F;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.modal-body{
+    width: 90%;
+
+}
+.mb-3{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#salvarbot{
+    background-color: #7B366F;
+}
+.div-modalisxd{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.div-modalis{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 15px;
+}
+#recipient-num{
+    width: 20%;
+}
+#recipient-bairro{
+    width: 80%;
+}
+#recipient-uf{
+    width: 20%;
+}
+.uf-op{
+    height: 35px;
+    border: none;
+}
+.tel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+
+}
+#recipient-telddd{
+    width: 20%;
+}
+#submit{
+    background-color:  #7b366f;
+}

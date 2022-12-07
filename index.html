@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de contatos</title>
+    <link href="./CSS/styles.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="imagem/png" href="./img/icon.png" />
+</head>
+<body>
+    <header>
+        <img src="img/ADSLIST.png" alt="">
+    </header>
+	<div class="app-lista">
+			<form id="app-form">
+				<button class="btn-app"  data-bs-toggle="modal" data-bs-target="#exampleModal">Cadastrar</button>
+        <div class="pesquisar">
+          <h3 id="h1">Encontre pessoas, telefones e endereços</h3>
+          <div class="voltapsq">
+            <input id="buscarNome" type="search" placeholder="Pesquisar">
+            <div class="bordapsq">
+              <div class="circpesq">
+                  <button class="lupa"><img src="./img/lupalist.png" alt=""></button>
+              </div>
+            </div>
+          </div>
+        </div>
+            <!--Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h5 class="modal-title" id="exampleModalLabel">Cadastro</h5>
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Nome</label>
+                      <input type="text" class="form-control" id="pessoaNome" placeholder="Fulano da Silva" required>
+                    </div>
+                    <div class="tel">
+                      <label for="recipient-name" class="col-form-label">Telefone</label>
+                      <input type="number" class="form-control" id="pessoaTelefone" placeholder="Telefone com DDD" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Endereço</label>
+                      <input type="text" class="form-control" id="pessoaEndereco" placeholder="Avenida Brasil">
+                      <div class="div-modalisxd">
+                        <div class="div-modalis">
+                          <label for="message-text" class="col-form-label">Cidade</label>
+                          <input type="text" class="form-control" id="pessoaCidade" placeholder="cidade">
+                          <label for="message-text" class="col-form-label">UF</label>
+                          <select class= "uf-op" id="pessoaEstado" name="estado">
+                            <option value="PR">PR</option>
+                            <option value="SP">RO</option>
+                            <option value="AC">AC</option>
+                            <option value="AM">AM</option>
+                            <option value="RR">RR</option>
+                            <option value="PA">PA</option>
+                            <option value="AP">AP</option>
+                            <option value="TO">TO</option>
+                            <option value="MA">MA</option>
+                            <option value="PI">PI</option>
+                            <option value="CE">CE</option>
+                            <option value="RN">RN</option>
+                            <option value="PB">PB</option>
+                            <option value="PE">PE</option>
+                            <option value="AL">AL</option>
+                            <option value="SE">SE</option>
+                            <option value="BA">BA</option>
+                            <option value="MG">MG</option>
+                            <option value="ES">ES</option>
+                            <option value="RJ">RJ</option>
+                            <option value="SP">SP</option>
+                            <option value="SC">SC</option>
+                            <option value="RS">RS</option>
+                            <option value="MT">MT</option>
+                            <option value="GO">GO</option>
+                            <option value="DF">DF</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+              </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                  <button  class="btn btn-primary" id="btnCadastrar" type="submit">Salvar</button>
+                </div>
+              </div>
+            </div>
+          </div>		
+			  </div>
+      </form>
+		<div class="content-actions">
+			<div class="content-actions-buttons">
+				<button class="btn-app" id="btnOrdenar">Ordenar A > Z</button>
+			</div>
+		</div>
+	</div>
+    <div class="app">
+        <div class="content-list">
+            <div class="content-list-container">
+                <ul id="listaPessoas"></ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h5 class="direitos">Todos os direitos Reservados © Ana Beatriz & Ryan Rafael</h5>
+    </footer>
+	<script src="./JS/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
